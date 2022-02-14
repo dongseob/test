@@ -8,15 +8,30 @@
     <style>
         body {
             -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
         }
     </style>
+
+    <script></script>
+
 </head>
-<body>
-    <img src="./BF_Jack_Daniel's_Honey_200ML.jpg" alt="" >
+<body oncontextmenu="return false">
+    <img src="./BF_Jack_Daniel's_Honey_200ML.jpg" alt="">
+
+    <script>
+        window.onload = function(){
+            var body = document.body;
+            var layer = document.createElement("div");
+            body.prepend(layer);
+
+            layer.style.zIndex = '999';
+            layer.style.position = 'fixed';
+            layer.style.width = '100vw';
+            layer.style.height = '100vh';
+            layer.style.backgroundColor = 'red';
+            layer.style.opacity = '.1';
+            layer.style.top = '0';
+            layer.style.left = '0';
+        }
+    </script>
 </body>
 </html>
